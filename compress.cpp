@@ -69,5 +69,10 @@ int main() {
     }
  
     std::cout << std::hex << std::setfill('0') << std::setw(8) << offset << "\n";
+
+    std::cout << "Do you want to compress file? (Y) (N): ";
+    char answer;
+    std::cin >> answer;
+    bool compress = (answer == 'y' || answer == 'Y');
     return 0;
 }
